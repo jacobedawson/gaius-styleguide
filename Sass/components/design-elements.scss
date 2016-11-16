@@ -1,0 +1,115 @@
+.gaius-hollow-circle {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 100%;
+  &.left {
+    left: -100px;
+  }
+  &.right {
+    right: 115px;
+  }
+}
+
+/* Contact Containers */
+.contact-container {
+  .content-info {
+    padding: 0;
+    .col-xs-4 {
+      /* Contact Avatar */
+      img.img-circle {
+        width: 100%;
+        box-shadow: $gs_box_shadow_light;
+      }
+    }
+    .col-xs-8 {
+      margin: 0;
+      padding: 0;
+      /* Contact Name + Details */
+      div.card-title {
+        line-height: 1em;
+        color: $gs_grey_mid;
+        h4 {
+          margin: 0;
+          font-weight: bold;
+          color: $gs_red_dark;
+        }
+
+      }
+    }
+    /* Save Contact Button */
+    a.btn {
+      width: 100%;
+    }
+  }
+}
+
+/* Filetype Containers */
+div.file-container {
+  width: 100%;
+  border: 2px solid white;
+  color: white;
+  box-shadow: $gs_box_shadow_light;
+  margin-bottom: 10px;
+  padding: 25px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  p {
+    margin: 0;
+    padding-left: 25px;
+  }
+  i.document-icons {
+
+    position: absolute;
+    &.left {
+      left: 5px;
+      font-size: 3em;
+    }
+    &.right {
+      font-size: 1.5em;
+      top: 5px;
+      right: 5px;
+    }
+  }
+  /* Filetype Colours */
+  &.filetype-word {
+    background: rgb(44, 88, 152);
+  }
+  &.filetype-html {
+    background: rgb(93, 93, 93);
+  }
+  &.filetype-pdf {
+    background: rgb(205, 30, 30);
+  }
+  &.filetype-excel {
+    background: rgb(29, 112, 68);
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+/* Image Containers */
+.image-container {
+  margin: 10px 0px;
+  box-shadow: $gs_box_shadow_light;
+  position: relative;
+  border: 2px solid white;
+  img {
+    width: 100%;
+  }
+  .download-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: black;
+    transform: scaleX(-1);
+    background: white;
+    font-size: 2em;
+    padding: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}

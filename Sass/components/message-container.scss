@@ -1,0 +1,83 @@
+div.message_container {
+  background: white;
+  min-width: 260px;
+  border-radius: 5px;
+  padding: 10px;
+  color: $gs_grey_dark;
+  margin-bottom: 10px;
+  font-weight: 400;
+  @include boxShadow($gs_box_shadow_mid);
+  .message_author {
+    color: $gs_red_dark;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+  &.left {
+    float: left;
+    /* Message Arrow Styles - Left */
+    &:before {
+      @extend %arrow;
+      left: -11px;
+      top: 30px;
+      border-right: 9px solid $gs_purple_soft;
+    }
+    &:after {
+      @extend %arrow;
+      left: -9px;
+      top: 30px;
+      border-right: 9px solid $gs_white;
+    }
+    /* ###END Message Arrow Styles - Left */
+  }
+  /* Message Arrow Styles - Right */
+  &.right {
+    float: right;
+    border: 2px solid $gs_purple_soft;
+    &:before {
+      @extend %arrow;
+      right: -11px;
+      top: 30px;
+      border-left: 9px solid $gs_purple_soft;
+    }
+    &:after {
+      @extend %arrow;
+      right: -9px;
+      top: 30px;
+      border-left: 9px solid $gs_white;
+    }
+    /* ###END Message Arrow Styles - Right */
+  }
+  /* Message Container Timestamp */
+  time {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    font-size: 9px;
+    color: $gs_grey_dark;
+  }
+  /* Gaius Brand Specific Message Styles */
+  &.gaius_message {
+    border: 2px solid $gs_orange;
+    &:before {
+      border-right: 9px solid $gs_orange;
+    }
+    .message_avatar {
+      position: absolute;
+      width: 25px;
+      top: 10px;
+      border-radius: 100%;
+      @include boxShadow($gs_box_shadow_mid);
+      &.left {
+        left: -40px;
+      }
+      &.right {
+        right: -40px;
+      }
+    }
+  }
+  p {
+    &.message-text {
+      color: $gs_grey_dark;
+    }
+  }
+}

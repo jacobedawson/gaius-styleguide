@@ -1,0 +1,28 @@
+.collapsible-panel {
+  div.panel, div.panel-default {
+    box-shadow: none;
+    div.panel-heading {
+      border-top: 1px solid $gs_grey_light;
+    }
+    i.panel-toggle {
+      position: absolute;
+      font-size: 2em;
+      right: 15px;
+    }
+  }
+}
+
+div.panel-prompt {
+  button {
+    width: 100%;
+  }
+}
+
+div.title.panel-prompt-title {
+  background: $gs_grey_soft;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  border-top: 1px solid $gs_grey_light;
+  border-bottom: 1px solid $gs_grey_light;
+  margin-bottom: 10px;
+}

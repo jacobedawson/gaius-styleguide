@@ -1,0 +1,33 @@
+%arrow {
+  content: '';
+  position: absolute;
+  margin-top: -13px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+%flexbox_container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+%navbar {
+  border-radius: 0;
+  box-shadow: none;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+%divider {
+  width: 100%;
+  display: block;
+  position: relative;
+  clear: both;
+}
+
+

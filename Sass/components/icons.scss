@@ -1,0 +1,7 @@
+i.example-icons-yellow {
+  @include example-icons($gs_orange, 3em);
+}
+
+i.example-icons-purple {
+  @include example-icons($gs_red_dark, 5em);
+}

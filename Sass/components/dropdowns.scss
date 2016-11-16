@@ -1,0 +1,38 @@
+/* Language Dropdown */
+.dropdown.open#language-dropdown {
+  a.dropdown-toggle {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    border-radius: 0;
+  }
+}
+
+#language-dropdown {
+  ul.dropdown-menu {
+    border: 0 solid rgba(245, 245, 220, 0);
+    border-radius: 0 !important;
+    right: 1px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.26);
+    li {
+      padding: 5px;
+      &:last-child {
+        padding-bottom: 10px;
+        padding-top: 15px;
+        a {
+          padding: 10px;
+        }
+      }
+      label {
+        color: $gs_grey_dark;
+      }
+      select.select {
+        width: 200px;
+        background: rgb(87, 85, 85);
+        color: rgb(255, 255, 255);
+        padding: 8px;
+      }
+      a {
+        margin: 0;
+      }
+    }
+  }
+}

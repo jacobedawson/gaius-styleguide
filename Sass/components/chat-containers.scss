@@ -1,0 +1,73 @@
+/* Chat Anfrage Container */
+div.chat-offer {
+  margin-top: 30px;
+  padding: 0;
+  border-radius: 5px;
+  &.orange {
+    border: 2px solid $gs_orange;
+  }
+  &.brand {
+    border: 2px solid $gs_red_dark;
+  }
+  div.card {
+    box-shadow: none;
+    .content {
+      h3, h4, h5, h6 {
+        margin-top: 0;
+        color: $gs_black;
+        font-weight: bold;
+      }
+    }
+  }
+  .tab-container {
+    height: 30px;
+    position: absolute;
+    top: -29px;
+    width: 100%;
+    padding-right: 10px;
+    .tabs {
+      float: right;
+      margin-right: 3px;
+      padding: 3px 10px;
+      font-weight: bold;
+      color: $gs_black;
+      position: relative;
+      //border-radius: 3px;
+      &.orange {
+        background: $gs_orange;
+
+      }
+      &.green {
+        background: $gs_green_light;
+        color: white;
+      }
+      &.yellow {
+        background: $gs_yellow;
+      }
+      &.brand {
+        background: $gs_red_dark;
+        color: white;
+      }
+      &.position-1 {
+        -webkit-clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%);
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: -17px;
+      }
+      &.position-2 {
+        -webkit-clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%);
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-right: -7px;
+        z-index: -1;
+      }
+      p {
+        margin: 0;
+        font-weight: initial;
+        &.selected {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

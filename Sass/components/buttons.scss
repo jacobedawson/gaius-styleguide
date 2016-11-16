@@ -1,0 +1,100 @@
+.btn.btn-lg, .btn-group-lg > .btn, .btn-group-lg .btn, .input-group-btn .btn.btn-lg, .input-group-btn .btn-group-lg > .btn, .btn-group-lg
+.input-group-btn .btn {
+  padding: 12px;
+}
+
+a.btn, button {
+  text-transform: initial;
+}
+
+a.btn.btn-brand-dark, .dropdown-menu li a.btn.btn-brand-dark {
+  background-color: $gs_red_light;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  &:hover {
+    background-color: $gs_red_dark !important;
+  }
+}
+
+a.btn.btn-brand-light {
+  font-size: 1.2em;
+  color: $gs_grey_dark;
+  text-transform: initial;
+  border: 2px solid $gs_grey_light;
+}
+
+a.btn.explainer-cta-button {
+  margin-top: 40px;
+  font-size: 1.3rem;
+  box-shadow: none !important;
+  font-weight: 400;
+  padding: 0px 20px;
+}
+
+button.btn.btn-alert {
+  float: right;
+  margin: 0;
+  padding: 10px;
+}
+
+.app-icons {
+  img {
+    margin-bottom: 5px;
+  }
+}
+
+/* Full Width Action Buttons */
+a.btn.full-width {
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  color: white;
+  font-weight: bold;
+  border-top: 1px solid $gs_grey_light;
+  box-shadow: none;
+}
+
+a.btn.btn-brand-dark.btn-lg {
+  margin-top: 15px;
+}
+
+#register-button {
+  background: rgb(253, 175, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 5px;
+}
+
+button.gaius-cta-button {
+  border: 1px solid $gs_grey_dark;
+  width: 240px;
+  img {
+    float: left;
+  }
+  span {
+    display: block;
+    margin-top: 9px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: initial;
+  }
+}
+
+a.btn.gaius-cta-button {
+  border: 2px solid $gs_grey_light;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: none !important;
+}
+
+.app-icons {
+  width: 100%;
+  height: auto;
+}
+
+a.btn, a.btn.btn-lg {
+  font-weight: 300;
+  font-size: 1.1rem;
+}

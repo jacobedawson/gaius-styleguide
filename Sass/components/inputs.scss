@@ -1,0 +1,25 @@
+div.form-group.label-floating {
+  margin-top: 15px;
+  input.form-control {
+    background-image: none;
+    border: 1px solid $gs_grey_light;
+    border-radius: 4px;
+    height: 47px;
+    padding-left: 20px;
+  }
+  label.control-label {
+    padding-left: 20px;
+    padding-top: 5px;
+  }
+  &.is-focused {
+    .control-label {
+      padding-top: 0;
+    }
+  }
+}
+
+div.form-group.label-floating:not(.is-empty) {
+  .control-label {
+    padding-top: 0;
+  }
+}

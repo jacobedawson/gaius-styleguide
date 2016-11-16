@@ -1,0 +1,88 @@
+nav#mobile-navbar-top {
+  box-shadow: none;
+  background-color: $gs_red_dark;
+  color: white;
+}
+
+.mobile-content-container {
+  @extend .flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  /* navbar */
+  nav.navbar, nav.navbar-default {
+    box-shadow: none;
+    background-color: $gs_red_dark;
+    color: white;
+  }
+  /* main content section */
+  .main-content-section {
+    margin-top: 70px;
+    margin-bottom: 0;
+    @extend .flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+  }
+  /* input section */
+  form {
+    min-height: 60px;
+    padding: 10px;
+    border: 1px solid $gs_grey_mid;
+    div.input-group {
+      border: none;
+      .input-group-addon {
+        background: none;
+        color: $gs_grey_mid;
+        border-radius: 100%;
+        font-size: 1.5em;
+      }
+    }
+  }
+  /* footer navigation w/ icons */
+  footer.mobile-footer-nav {
+    border-top: 1px solid $gs_grey_light;
+    margin: 0;
+    padding: 0;
+    ul {
+      @extend .flex-centered;
+      height: 60px;
+      li.footer-nav-icons {
+        @extend .flex-centered;
+        flex-direction: column;
+        width: 25%;
+        height: 100%;
+        color: $gs_grey_mid;
+        i.fa {
+          font-size: 1.5em;
+        }
+        span.icon-label {
+          font-size: 12px;
+          margin-top: 5px;
+        }
+        &.selected {
+          color: $gs_red_dark;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile Text Input */
+input.form-control.mobile-text-input {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 3px;
+}
+
+/* Remove Focus Effect */
+.form-group.is-focused .form-control {
+  background-image: none;
+}
+
+div.chat-input-column {
+  margin-bottom: 10px;
+  border-top: 1px solid $gs_grey_mid;
+}
+

@@ -1,0 +1,60 @@
+/* BACKGROUND  Color Utilities */
+.bg-w {
+  background: white !important;
+}
+
+.bg-g-s {
+  background: $gs_grey_soft !important;
+}
+
+.bg-g-s-2 {
+  background: $gs_grey_soft-2 !important;
+}
+
+/* FONT Color Utilities */
+.f-w {
+  color: white !important;
+}
+
+/* Gaius Grey */
+.f-g-m {
+  color: $gs_grey_mid !important;
+}
+
+.f-g-d {
+  color: $gs_grey_dark !important;
+}
+
+.f-g-l {
+  color: $gs_grey_light !important;
+}
+
+.f-g-s {
+  color: $gs_grey_soft !important;
+}
+
+.f-g-s-2 {
+  color: $gs_grey_soft-2 !important;
+}
+
+/* Gaius Red */
+.f-r-d {
+  color: $gs-red_dark !important;
+}
+
+.f-r-l {
+  color: $gs_red_light !important;
+}
+
+/* Gaius Purple */
+.f-p-l {
+  color: $gs_purple_light !important;
+}
+
+.f-p-s {
+  color: $gs_purple_soft !important;
+}
+
+.f-p-s-2 {
+  color: $gs_purple_extra_soft !important;
+}

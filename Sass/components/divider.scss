@@ -1,0 +1,25 @@
+.divider-20 {
+  @include divider(20px);
+}
+
+.divider-40 {
+  @include divider(40px);
+}
+
+.divider-60 {
+  @include divider(60px);
+}
+
+.divider-80 {
+  @include divider(80px);
+}
+
+.divider-100 {
+  @include divider(100px);
+}
+
+.content-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

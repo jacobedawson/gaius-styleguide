@@ -1,0 +1,185 @@
+@import "../helpers/variables";
+
+.row-fluid {
+  @include clearfix;
+}
+
+body {
+  background-color: $gs_grey_soft;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+.chatbot-container {
+  padding: 30px 30px 0 30px;
+  position: relative;
+  max-width: 1170px;
+  margin: auto;
+  //&:before {
+  //  content: '';
+  //  display: block;
+  //  position: absolute;
+  //  left: 0;
+  //  top: 0;
+  //  bottom: 0;
+  //  right: 0;
+  //  width: 100%;
+  //  height: 100%;
+  //  background-repeat: no-repeat;
+  //  background-size: cover;
+  //  background-image: url('../images/backgrounds/mobile_phone.jpg');
+  //  opacity: 0.4;
+  //}
+}
+
+.opacity-layer {
+  position: absolute;
+  display: block;
+  height: 170px;
+  margin-top: -30px;
+  margin-left: -30px;
+  margin-right: -30px;
+  background: linear-gradient(rgb(240, 240, 245), rgba(0,0,0,0));
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.chat-cta-container {
+  padding: 120px 30px 30px 30px;
+  position: relative;
+  max-width: 1170px;
+  margin: auto;
+  height: 600px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background-position: 50% 50%;
+  }
+  h2 {
+    margin: 0;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+  }
+  h5 {
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+  }
+}
+
+.chat-cta-container.motorbike {
+    &:before {
+      background-image: url('../images/backgrounds/motorbike.png');
+    }
+    div.col-md-6 {
+      left: 80px;
+      top: 25px;
+    }
+}
+
+.chat-cta-container.work {
+  &:before {
+    background-image: url('../images/backgrounds/work.png');
+  }
+  div.col-md-6 {
+    right: -30px;
+    top: 100px;
+  }
+}
+
+.chat-cta-container.travel {
+  &:before {
+    background-image: url('../images/backgrounds/travel.png');
+  }
+  div.col-md-6 {
+    right: -100px;
+    top: 55px;
+  }
+}
+
+.chat-cta-container.city {
+  &:before {
+    background-image: url('../images/backgrounds/city.png');
+  }
+}
+
+.chat-cta-container.woman {
+  &:before {
+    background-image: url('../images/backgrounds/woman.png');
+  }
+}
+
+.checkmark-icons {
+  font-size: 1.5em;
+  color: $gs_grey_mid;
+  li {
+    margin-bottom: 30px;
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+img#gaius-logo-icon {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  cursor: pointer;
+  z-index: 2;
+  width: 50px;
+  &:hover {
+    animation: spin 500ms cubic-bezier(0.46, 0.03, 0.36, 0.97);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
+
+.col-md-4.featured-card {
+  margin-top: -30px;
+  margin-bottom: -40px;
+  .card {
+    background: $gs_red_dark;
+    color: white;
+  }
+}
+
+.yellow-icons, .purple-icons {
+  width: 60px;
+  height: 60px;
+}
+
+.app-icons {
+  width: 120px;
+  height: 40px;
+}
+
+div.content {
+  form {
+    margin-top: 40px;
+  }
+}
+
+

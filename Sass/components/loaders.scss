@@ -1,0 +1,38 @@
+/* Loaders / Spinners */
+
+/* Typing Indicator */
+div.loading-animation-typing {
+  margin: auto;
+  //text-align: center;
+  .circle {
+    width: 10px;
+    height: 10px;
+    background-color: $gs_red_light;
+    border-radius: 100%;
+    margin: 3px;
+    display: inline-block;
+    animation: glow 1.2s infinite;
+    &.one {
+      animation-delay: 0.4s;
+    }
+    &.two {
+      animation-delay: 0.7s;
+    }
+    &.three {
+      animation-delay: 0.9s;
+    }
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0
+  }
+  50% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}
+/* END Typing Indicator */

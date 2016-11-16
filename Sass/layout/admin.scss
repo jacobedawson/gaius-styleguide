@@ -1,0 +1,334 @@
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.no-border {
+  border: none;
+  border-radius: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-centered {
+  @extend .flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  @extend .flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: hidden;
+  .flex-navbar {
+    @extend .flex;
+    align-items: center;
+    min-height: 50px;
+    height: 50px;
+    padding: 15px;
+    div#menu-toggle {
+      margin-left: auto; /* align right */
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    i#menu-icon {
+      cursor: pointer;
+    }
+  }
+  .flex-main-content {
+    @extend .flex;
+    flex-grow: 1;
+    .flex-column {
+      min-width: 200px;
+      width: 200px;
+      max-width: 250px;
+      flex-grow: 1;
+      @extend .flex;
+      flex-direction: column;
+      ul.list-group {
+        overflow-y: scroll;
+      }
+      div.admin-column-header {
+        @extend .flex-centered;
+        min-height: 50px;
+        background: $gs_grey_dark;
+        color: white;
+        padding: 15px;
+        &.active {
+          background-color: $gs_black;
+        }
+        span {
+          margin-right: 10px;
+        }
+        i.fa-caret-down {
+          cursor: pointer;
+          color: $gs_grey_mid;
+        }
+      }
+      &.stretch {
+        max-width: 100%;
+        flex-grow: 3;
+        min-width: 400px;
+      }
+    }
+  }
+}
+
+
+
+ul.admin-chat-list {
+  @extend .flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid $gs_grey_mid;
+  li.admin-chat-panel {
+    padding: 10px;
+    border-bottom: 1px solid $gs_grey_light;
+    &.gaius-msg {
+      background: $gs_grey_soft;
+      p {
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+    &.customer-msg {
+      background: white;
+      p {
+        span {
+          color: $gs_red_dark;
+          font-weight: bold;
+        }
+      }
+    }
+    p.chat-header {
+      color: $gs_grey_mid;
+    }
+  }
+}
+
+.input-group-addon {
+  @extend .no-border;
+  cursor: pointer;
+}
+
+div.input-group {
+  border: 1px solid $gs_grey_mid;
+  border-top: none;
+  input {
+    padding: 5px;
+    &::-webkit-input-placeholder {
+      font-size: 1em;
+    }
+  }
+  .search, .upload-file {
+    &:hover {
+      background-color: $gs_grey_light;
+    }
+  }
+  .send-msg, .filter {
+    background-color: $gs_red_dark;
+    color: white;
+    &:hover {
+      background-color: $gs_red_light;
+    }
+  }
+}
+
+/* Case Information List */
+ul.case-header {
+  border-bottom: 1px solid $gs_grey_light;
+  li {
+    flex-grow: 1;
+    padding: 20px;
+    color: $gs_grey_mid;
+    &:first-child {
+      border-right: 1px solid $gs_grey_light;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $gs_grey_light;
+      color: $gs_black;
+    }
+  }
+}
+
+ul.case-information-list {
+  background: white;
+  @extend .flex;
+  flex-direction: column;
+  height: 100%;
+  li.info-panel {
+    @extend .flex;
+    padding: 20px;
+    border-bottom: 1px solid $gs_grey_light;
+    div.case-details {
+        span.case-status-icon {
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          background-color: $gs_yellow;
+          display: inline-flex;
+        }
+      &.active {
+        .case-id {
+          font-weight: bold;
+        }
+      }
+      .activity-status {
+        position: absolute;
+        padding-left: 15px;
+        font-size: 0.8em;
+        color: rgb(255, 0, 0);
+      }
+    }
+    div.case-tags {
+      margin-left: auto;
+      span {
+        &.questions {
+          .fa {
+            color: $gs_red_light;
+          }
+        }
+        &.accepted {
+          .fa {
+            color: $gs_orange;
+          }
+        }
+        &.rejected {
+          .fa {
+            color: red;
+          }
+        }
+        &.costs {
+          .fa {
+            color: $gs_green_light;
+          }
+        }
+        margin-right: 5px;
+        i.fa {
+          margin-right: 3px;
+        }
+      }
+    }
+    &:hover {
+      background-color: $gs_purple_extra_soft;
+    }
+  }
+}
+
+/* Filter Options */
+ul.filter-options {
+  user-select: none;
+  li {
+    &:hover {
+      background-color: $gs_grey_light;
+    }
+    border-bottom: 1px solid $gs_grey_mid;
+    padding: 10px;
+    label {
+      input {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/* Dropdown Menu */
+ul.dropdown-menu {
+  li {
+    cursor: pointer;
+    a {
+      display: block;
+      padding: 15px;
+      text-align: center;
+    }
+  }
+  li.divider {
+    margin: 0;
+  }
+}
+
+/* Slide-In Menu */
+div#slide-in-menu {
+  transform: translateX(300px);
+  transition: all cubic-bezier(0.46, 0.03, 0.52, 0.96) 0.4s;
+  width: 300px;
+  background: rgb(55, 50, 50);
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 3;
+  &.open {
+    transform: translateX(0);
+  }
+  i#slide-menu-close {
+    display: inline-block;
+    padding: 10px 0px 0px 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  ul {
+    li {
+      padding: 15px;
+      font-size: 1.2em;
+      color: $gs_grey_light;
+      cursor: pointer;
+      &:hover {
+        color: white;
+        background: $gs_grey_dark;
+      }
+    }
+  }
+}
+
+
+/* User Contact Tabs */
+li.list-group-item.user-contact-tab {
+  height: 50px;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 0;
+  &:hover {
+    background: $gs_grey_soft;
+  }
+  p {
+    margin-left: 40px;
+  }
+  &.new {
+    .user-contact-status {
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      background: $gs_yellow;
+      z-index: 1;
+      border-radius: 100%;
+      top: 7px;
+      left: 35px;
+      border: 1px solid white;
+    }
+    p {
+      font-weight: bold;
+      color: $gs_black;
+    }
+  }
+  &.selected {
+    background: $gs_grey_soft;
+    p {
+      color: $gs_red_dark;
+      font-weight: bold;
+    }
+  }
+}
+
+

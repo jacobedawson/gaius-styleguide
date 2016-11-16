@@ -1,0 +1,3 @@
+.togglebutton label input[type=checkbox]:checked + .toggle {
+  background-color: $gs_red_dark;
+}

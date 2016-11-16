@@ -1,0 +1,9 @@
+#mobile-content-wrapper {
+  overflow-y: scroll;
+  flex-grow: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  min-width: 320px;
+  position: relative;
+}

@@ -1,0 +1,32 @@
+/* Colors */
+$gs_brand_purple: rgb(160, 0, 68);//gaius brand purple
+$gs_red_dark: rgb(134, 0, 57);
+$gs_red_light: rgb(160, 0, 68);//gaius brand purple
+$gs_purple_light: rgb(198, 106, 145);
+$gs_purple_soft: rgb(214, 162, 184);
+$gs_purple_extra_soft: rgba(214,162,184,0.2);
+$gs_grey_soft: rgb(240, 240, 245);
+$gs_grey_soft-2: rgb(247, 247, 248);
+$gs_grey_light: rgb(191, 200, 210);
+$gs_grey_mid: rgb(145, 155, 165);
+$gs_grey_dark: rgb(85, 95, 105);
+$gs_white: rgb(255, 255, 255);
+$gs_black: rgb(55, 50, 50);
+$gs_orange: rgb(255, 180, 0);
+$gs_yellow: rgb(254, 231, 4);
+$gs_green: rgb(29, 112, 68);
+$gs_green_light: rgb(18, 191, 144);
+$gs_blue: rgb(44, 88, 152);
+
+/* Box Shadows */
+$gs_box_shadow_light: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$gs_box_shadow_bottom: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+$gs_box_shadow_mid: 5px 6px 11px -8px rgba(0,0,0,.56);
+$gs_box_shadow_heavy: 0 10px 20px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
+$gs_material_kit_box_shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+/* Font Weights */
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;

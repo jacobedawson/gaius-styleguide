@@ -1,0 +1,12 @@
+#profile-edit-container {
+  overflow-x: scroll;
+  .edit-section {
+    padding: 15px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+    border-top: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    width:100%;
+    margin: 15px 0;
+  }
+}
